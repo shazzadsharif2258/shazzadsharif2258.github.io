@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-const REPO_NAME = "shazzadsharif2258"; // <-- put your repo name here
+const REPO_NAME = "shazzadsharif2258"; // your repo name
 
 export default defineConfig(({ mode }) => {
   const isProd = mode === "production";
@@ -15,3 +15,4 @@ export default defineConfig(({ mode }) => {
     resolve: { alias: { "@": path.resolve(__dirname, "./src") } },
   };
 });
+
