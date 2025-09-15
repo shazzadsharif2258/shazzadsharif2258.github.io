@@ -1,3 +1,4 @@
+# .github/workflows/deploy.yml
 name: Deploy to GitHub Pages
 
 on:
@@ -27,14 +28,13 @@ jobs:
           node-version: 20
           cache: npm
 
-      # Try ci first (fast/reproducible). If lockfile mismatch, fall back to install.
       - name: Install deps
         run: npm ci || npm install
 
       - name: Build
         run: npm run build
 
-      # SPA fallback (safe even if you don't have client-side routing)
+      # SPA fallback
       - name: Copy 404.html
         run: cp dist/index.html dist/404.html
 
@@ -53,3 +53,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
