@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, useScroll, useTransform, useMotionTemplate } from "framer-motion";
-const RESUME_URL = new URL("Sharif_CV.pdf", import.meta.env.BASE_URL).toString();
 
 const navItems = [
   { label: "About", href: "#about" },
@@ -55,7 +54,7 @@ export default function Navigation() {
               </a>
             ))}
             {/* 👇 Download Resume */}
-            <a href={RESUME_URL} download="Shazzad_Hossain_Sharif_Resume.pdf">
+            <a href="public\Sharif_CV.pdf" download="Shazzad_Hossain_Sharif_Resume.pdf">
               <Button size="sm" className="bg-portfolio-accent hover:bg-portfolio-accent/90 text-white">
                 Resume
               </Button>
@@ -86,7 +85,7 @@ export default function Navigation() {
                   {item.label}
                 </a>
               ))}
-              <a href={RESUME_URL} download="Shazzad_Hossain_Sharif_Resume.pdf" className="self-start">
+              <a href="public\Sharif_CV.pdf" download="Shazzad_Hossain_Sharif_Resume.pdf" className="self-start">
                 <Button size="sm" className="bg-portfolio-accent hover:bg-portfolio-accent/90 text-white">
                   Resume
                 </Button>
