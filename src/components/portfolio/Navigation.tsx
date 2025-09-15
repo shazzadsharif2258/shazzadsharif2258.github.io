@@ -10,9 +10,10 @@ const navItems = [
   { label: "Contact", href: "#contact" },
 ];
 
-// ✅ Build a base-aware URL (works locally and on GitHub Pages)
-const RESUME_URL = new URL("Sharif_CV.pdf", import.meta.env.BASE_URL).toString();
+// ✅ works in dev and on GitHub Pages
+const RESUME_URL = `${import.meta.env.BASE_URL}Sharif_CV.pdf`;
 const RESUME_FILENAME = "Shazzad_Hossain_Sharif_Resume.pdf";
+
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
