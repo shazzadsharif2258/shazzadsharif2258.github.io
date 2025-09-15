@@ -10,15 +10,17 @@ const navItems = [
   { label: "Contact", href: "#contact" },
 ];
 
+// ✅ Build a base-aware URL (works locally and on GitHub Pages)
+const RESUME_URL = new URL("Sharif_CV.pdf", import.meta.env.BASE_URL).toString();
+const RESUME_FILENAME = "Shazzad_Hossain_Sharif_Resume.pdf";
+
 export default function Navigation() {
   const [open, setOpen] = useState(false);
   const { scrollY } = useScroll();
 
-  // animate background opacity 0 -> 0.75
   const bgOpacity = useTransform(scrollY, [0, 60], [0, 0.75]);
   const background = useMotionTemplate`rgba(255 255 255 / ${bgOpacity})`;
 
-  // animate shadow opacity 0 -> 0.08
   const shadowOpacity = useTransform(scrollY, [0, 60], [0, 0.08]);
   const boxShadow = useMotionTemplate`0 10px 30px rgba(0 0 0 / ${shadowOpacity})`;
 
@@ -53,8 +55,8 @@ export default function Navigation() {
                 {item.label}
               </a>
             ))}
-            {/* 👇 Download Resume */}
-            <a href="Sharif_CV.pdf" download="Shazzad_Hossain_Sharif_Resume.pdf">
+            {/* Download Resume (served from /public) */}
+            <a href={RESUME_URL} download={RESUME_FILENAME}>
               <Button size="sm" className="bg-portfolio-accent hover:bg-portfolio-accent/90 text-white">
                 Resume
               </Button>
@@ -85,7 +87,7 @@ export default function Navigation() {
                   {item.label}
                 </a>
               ))}
-              <a href="Sharif_CV.pdf" download="Shazzad_Hossain_Sharif_Resume.pdf" className="self-start">
+              <a href={RESUME_URL} download={RESUME_FILENAME} className="self-start">
                 <Button size="sm" className="bg-portfolio-accent hover:bg-portfolio-accent/90 text-white">
                   Resume
                 </Button>
