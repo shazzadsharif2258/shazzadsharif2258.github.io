@@ -55,7 +55,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto leading-relaxed">
-          Computer Science & Engineering student • Full-Stack Developer • AI Enthusiast
+          Apps Developer •  Flutter Enthusiast  • AI Enthusiast
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
