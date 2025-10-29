@@ -14,7 +14,7 @@ import obj1 from "../../assets/object-1.png";
 import obj2 from "../../assets/object-2.png";
 import child1 from "../../assets/children-1.png";
 // ⛔️ You have children-2.PNG (uppercase). Match the case exactly:
-import child2 from "../../assets/children-2.PNG";
+import child2 from "../../assets/children-2.png";
 import food1 from "../../assets/food-1.png";
 import food2 from "../../assets/food-2.png";
 import enc1 from "../../assets/encrypt-1.png";
