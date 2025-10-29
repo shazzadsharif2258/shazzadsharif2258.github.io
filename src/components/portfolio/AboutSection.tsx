@@ -3,7 +3,7 @@ import { Code, Palette, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
 const FEATURES = [
-  { icon: <Code className="w-8 h-8 text-portfolio-accent" />, title: "Flutter Developer", description: "Flutter, Dart, firbase, and clean architectures." },
+  { icon: <Code className="w-8 h-8 text-portfolio-accent" />, title: "Flutter Developer", description: "Flutter, Dart, Firbase, and clean architectures." },
   { icon: <Palette className="w-8 h-8 text-portfolio-accent" />, title: "AI & ML", description: "Object detection and intelligent application prototypes." },
   { icon: <Zap className="w-8 h-8 text-portfolio-accent" />, title: "Academic Excellence", description: "CGPA 3.82/4.00, VC & Dean’s Awards at GUB." },
 ];
