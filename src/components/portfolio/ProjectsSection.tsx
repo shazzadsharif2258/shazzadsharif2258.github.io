@@ -6,18 +6,22 @@ import { motion, useMotionValue, useAnimation } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 
 
-import book1 from "@/assets/booksphere-1.png";
-import book2 from "@/assets/booksphere-2.png";
-import obj1 from "@/assets/object-1.png";
-import obj2 from "@/assets/object-2.png";
-import child1 from "@/assets/children-1.png";
-import child2 from "@/assets/children-2.PNG";
-import food1 from "@/assets/food-1.png";
-import food2 from "@/assets/food-2.png";
-import enc1 from "@/assets/encrypt-1.png";
-import air1 from "@/assets/airline-1.png";
-import covid1 from "@/assets/covid-1.png";
-import covid2 from "@/assets/covid-2.png";
+// from src/components/portfolio/ProjectsSection.tsx
+
+import book1 from "../../assets/booksphere-1.png";
+import book2 from "../../assets/booksphere-2.png";
+import obj1 from "../../assets/object-1.png";
+import obj2 from "../../assets/object-2.png";
+import child1 from "../../assets/children-1.png";
+// ⛔️ You have children-2.PNG (uppercase). Match the case exactly:
+import child2 from "../../assets/children-2.PNG";
+import food1 from "../../assets/food-1.png";
+import food2 from "../../assets/food-2.png";
+import enc1 from "../../assets/encrypt-1.png";
+import air1 from "../../assets/airline-1.png";
+import covid1 from "../../assets/covid-1.png";
+import covid2 from "../../assets/covid-2.png";
+
 
 type Project = {
   title: string;
