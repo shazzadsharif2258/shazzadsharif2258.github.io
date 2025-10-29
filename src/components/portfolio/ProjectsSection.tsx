@@ -42,7 +42,7 @@ const PROJECTS: Project[] = [
       "Integrated platform for managing and discovering books with modern UX and real-time features.",
     technologies: ["ReactJS", "NodeJS", "Firebase"],
     images: [book1, book2],
-    demoUrl: "https://sites.google.com/view/shazzadsharif",
+    demoUrl: "https://bookshop-c30a2.web.app/",
     githubUrl: "https://github.com/shazzadsharif2258",
   },
   {
@@ -66,13 +66,13 @@ const PROJECTS: Project[] = [
     githubUrl: "https://github.com/shazzadsharif2258",
   },
   {
-    title: "Food Delivery System",
-    slug: "food-delivery",
+    title: "Event Booking System",
+    slug: "event-booking",
     description:
-      "End-to-end food delivery management with auth, orders, restaurants and tracking.",
+      "End-to-end  event booking management with auth, orders, restaurants and tracking.",
     technologies: ["HTML", "CSS", "PHP", "MySQL"],
     images: [food1, food2],
-    demoUrl: "https://sites.google.com/view/shazzadsharif",
+    demoUrl: "http://eventorg.42web.io/",
     githubUrl: "https://github.com/shazzadsharif2258",
   },
   {
