@@ -3,7 +3,7 @@ import { Code, Palette, Zap } from "lucide-react";
 import { motion } from "framer-motion";
 
 const FEATURES = [
-  { icon: <Code className="w-8 h-8 text-portfolio-accent" />, title: "Full-Stack Development", description: "React, Node, modern databases, and clean architectures." },
+  { icon: <Code className="w-8 h-8 text-portfolio-accent" />, title: "Flutter Developer", description: "Flutter, Dart, firbase, and clean architectures." },
   { icon: <Palette className="w-8 h-8 text-portfolio-accent" />, title: "AI & ML", description: "Object detection and intelligent application prototypes." },
   { icon: <Zap className="w-8 h-8 text-portfolio-accent" />, title: "Academic Excellence", description: "CGPA 3.82/4.00, VC & Dean’s Awards at GUB." },
 ];
@@ -22,7 +22,8 @@ export default function AboutSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-portfolio-primary mb-6">About Me</h2>
           <p className="text-xl text-portfolio-text-light max-w-3xl mx-auto leading-relaxed">
-            I’m a CSE student at Green University of Bangladesh and an intern at NextTech Limited. I build performant, accessible interfaces with tasteful motion.
+            I’m a CSE student at Green University of Bangladesh and an Intern at NextTech Limited.
+I build performant, accessible, and user-friendly mobile applications with Flutter.
           </p>
         </div>
 
@@ -37,7 +38,7 @@ export default function AboutSection() {
                 HSC in Science (GPA 5.00/5.00). Professional trainings in Python for Django and SEO.
               </p>
               <p>
-                I love motion design, shaders, and squeezing out performance wins without sacrificing beauty.
+                I am very passionate as a Flutter Developer focused on building fast, beautiful, and scalable mobile applications. I love turning ideas into pixel-perfect, high-performance apps that deliver smooth user experiences on both Android and iOS..
               </p>
             </div>
           </div>
