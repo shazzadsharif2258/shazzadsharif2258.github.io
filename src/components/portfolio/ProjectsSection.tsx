@@ -5,13 +5,13 @@ import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, useMotionValue, useAnimation } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 
-// ✅ import local images
+
 import book1 from "@/assets/booksphere-1.png";
 import book2 from "@/assets/booksphere-2.png";
 import obj1 from "@/assets/object-1.png";
 import obj2 from "@/assets/object-2.png";
 import child1 from "@/assets/children-1.png";
-import child2 from "@/assets/children-2.png";
+import child2 from "@/assets/children-2.PNG";
 import food1 from "@/assets/food-1.png";
 import food2 from "@/assets/food-2.png";
 import enc1 from "@/assets/encrypt-1.png";
